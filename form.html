@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        form{
+           
+            background-color:rgb(54, 35, 35);
+            color: wheat;
+            
+        }
+           
+        
+       .div1{
+        margin-left: 70px;
+    }
+    </style>
+</head>
+<body>
+    <form> 
+        <h1 style=" text-align: right; margin-right: 50px;">
+            <input type="button" value="Note" style="margin-left: 10px; color: aqua; background-color: darkgrey; " onclick="alert('Hello Students Fill the Complete Form ')" >
+            <input type="search" placeholder="Search">
+            <br>
+        </h1>
+            <div  style="  margin-left: 50px;">
+               <h1 style="text-align: center; "> <span style="text-decoration: underline rgb(74, 77, 42) ; color: white;">Personal Information</span> </h1>  <hr><br>
+                Name
+                <input type="text" name="Name" placeholder="First Name   Middle Name    Last Name" class="div1" style="width: 250px;">
+               
+                <br><br>
+                Email
+                <input type="email" name="Mail" value="abc@gmail.com" class="div1">
+                <br><br>
+                Phone Number
+                <input type="number" value="1234567890" style="margin-left: 11px;">
+                <br><br>
+                Date of Birth
+                <input type="date" style="margin-left: 23px;">
+                <br><br>
+                Time of Birth
+                <input type="time" value="6:00 PM" style="margin-left: 20px;">
+                <br><br>
+                Gender <br>
+               
+                <input type="radio" value="Mail" name="select"> Male <br>
+                
+                <input type="radio" value="Female" name="select">Female <br>
+                
+                <input type="radio" name="select">Other <br>
+                <br>
+                Your Favourite Color
+                <input type="color"  id="send" oninput="reasult.value = send.value"><br><br>
+                <input type="text" id="reasult" style="margin-left: 20px;"> <br> <br>
+
+
+                Your Favourite Games <br><br>
+                <select style="margin-left: 20px;">
+                    <option value="Cricket">Cricket</option>
+                    <option value="Volly-Ball">Volly-Ball</option>
+                    <option value="Football">Football</option>
+                    <option value="Kabaddi">Kabaddi</option>
+                </select>
+            </div><br><br>
+
+            <div  style="margin-left: 50px;">
+                
+                    <h1 style="text-align: center; "> <span style="text-decoration: underline rgb(74, 77, 42) ; color: white;">Educational Information</span> </h1>  <hr><br>
+        
+                <input type="checkbox" value="English">SSC (10th) <br>
+                Year of Passing
+                <input type="month" value="12">
+                <br><br>
+                Gap Years and Weeks <br>
+
+                <input type="range" max="3"  id="year" oninput="gap.value=year.value" >
+                <input type="number" max="3"  min="0" id="gap" value="0" required max="3"><br>
+
+                <input type="week" name="" id=""><br><br>
+
+                <input type="checkbox" value="Maths">HSC (12th) <br>
+                Year of Passing
+        <input type="month" value="12">
+        <br><br>
+        Gap Years and Weeks <br>
+
+        <input type="range" max="3"  id="year" oninput="gap.value=year.value" >
+        <input type="number" max="3"  min="0" id="gap" value="0" required max="3"><br>
+
+        <input type="week" name="" id=""><br><br>
+
+                <input type="checkbox" value="Science">Diploma <br> 
+                Year of Passing
+        <input type="month" value="12">
+        <br><br>
+        Gap Years and Weeks <br>
+
+        <input type="range" max="3"  id="year" oninput="gap.value=year.value" >
+        <input type="number" max="3"  min="0" id="gap" value="0" required max="3"><br>
+
+        <input type="week" name="" id="">
+
+            </div> <br><br>
+
+        
+        <div style="margin-left: 50px; text-align: center;">
+            <h1 style="text-align: center; "> <span style="text-decoration: underline rgb(74, 77, 42) ; color: white;">Create Your Account</span> </h1>  <hr><br>
+            
+            Personal Info URL <br>
+            <input type="url" value="http://www.abc.com">
+            <br><br>
+            Set Password <br>
+            <input type="password"  value="12345678" required min="8">
+            
+            <br><br>
+            Date of submit <br>
+            <input type="datetime-local" >
+            <br><br>
+            <span style="margin-right: 30px;">
+                <input type="submit" value="submit">
+            </span>
+            <span><input type="reset" value="Reset"></span>
+            
+            
+            
+        </div>
+    </form>
+</body>
+</html>
